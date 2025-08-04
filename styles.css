@@ -1,0 +1,20 @@
+body{
+    background-color: #FFEEDB;
+}
+
+h1 {
+    font-size: 64px!important;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.about-section {
+    padding: 30px 30px;
+}
+
+.btn {
+    background-color: #5C9EAD;
+}
