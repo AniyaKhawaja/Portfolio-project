@@ -1,5 +1,5 @@
 body{
-    background-color: #FFEEDB;
+    background-color: white;
 }
 
 h1 {
@@ -16,5 +16,24 @@ h2 {
 }
 
 .btn {
-    background-color: #5C9EAD;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(108, 99, 255);
+    padding: 20px 25px;
+}
+
+.btn:hover {
+color: black;
+background-color: rgb(108, 99, 255);
+}
+
+.learn-btn:hover {
+    color: black;
+background-color: white;
+}
+
+.contact-btn:hover {
+    color: black;
+background-color: white;
 }
