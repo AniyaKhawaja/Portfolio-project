@@ -16,8 +16,56 @@
     h1 {
         font-size: 64px;
     }
+    nav {
+    padding: 20px 0;
+    
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    
+}
+nav li{
+ display: inline;
+ list-style: none;
+ line-height: 42px;
+ margin-left: 15px;
+ 
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+nav a:hover, li.active a  {
+   
+    color: rgb(109, 99, 255);
+}
 </style>
 <body>
+     <div class="container">
+     <nav class="d-flex justify-content-between">
+       
+        <img src="imgs/logo.png" width="10%">
+        <ul>
+            <li class="active">
+                <a href="home.html">Home </a>
+            
+                </li>
+            <li>
+                 <a href="index.html">About </a>
+            </li>
+            <li>
+                 <a href="work.html">Work </a>
+            </li>
+            <li>
+                 <a href="contact.html">Contact </a>
+            </li>
+        </ul>
+     </nav>
+      </div>
     <h1 class="fw-bold mt-5 text-center p-5">Take a look at what I've been working on!</h1>
     <div class="container mt-5">
         <div class="row">
