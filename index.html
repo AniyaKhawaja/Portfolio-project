@@ -4,23 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/a778d53e9b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
-
 </head>
+
+<style>
+    :root {
+        --bg-primary: rgb(249, 247, 254);
+        
+    }
+    .head {
+        background-color:var(--bg-primary);
+        padding: 150px 120px;
+
+    }
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+h1 {
+    font-size: 96px!important;
+    text-align: center;  
+  
+}
+h3 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn {
+   text-align: center;
+   font-size: 18px;
+   color: black;
+ background-color: rgb(108, 99, 255);
+ padding: 20px 25px;
+
+}
+.learn-btn {
+    background-color: white;
+    padding: 20px 25px;
+   color: rgb(108, 99, 255);
+   font-weight: bolder;
+   font-size: 20px;
+    border: 1px solid rgb(108, 99, 255) ;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.yogurt-hd {
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    padding: 20px 0;
+    
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    
+}
+nav li{
+ display: inline;
+ list-style: none;
+ line-height: 42px;
+ margin-left: 15px;
+ 
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+nav a:hover, li.active a  {
+   
+    color: rgb(109, 99, 255);
+}
+
+.footer-btn {
+    padding-bottom: 80px;
+    text-decoration: none;
+}
+
+.contact-btn {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color:rgb(108, 99, 255) ;
+    padding: 20px 35px;
+}
+.contact-box {
+    background-color: var(--bg-primary);
+    padding: 30px 120px;
+    border-radius: 10px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+}
+.email:hover {
+    color: rgb(108, 99, 255) ;
+}
+
+ .social-links a {
+ margin: 50px 30px;
+font-size: 20px;
+color: rgb(108, 99, 255);
+background-color:#f9f7fe;
+border-radius: 75px;
+padding: 18px 20px;
+
+}
+.social-links a:hover {
+    background-color: rgb(108, 99, 255);
+    color: white;
+}
+@media (max-width: 900px) {
+   .ph {
+    font-size: 16px!important;
+  padding: 30px auto;
+   }
+   .yogurt-hd{
+  font-size: 42px;
+   }
+
+   .contact-box {
+    padding: 30px;
+   }
+   .learn-btn {
+margin-left:  150px ;
+   }
+}
+</style>
 <body>
-      <div class="container">
+            <div class="container">
      <nav class="d-flex justify-content-between">
-       
-        <img src="imgs/logo.png" width="10%">
+        <img src="imgs/logo.png" width="12%" class="d-none d-md-block">
+                <img src="imgs/logo-small.jpg" width="10%" class=" d-block d-md-none ">
         <ul>
             <li class="active">
-                <a href="home.html">Home </a>
+                <a href="index.html">Home </a>
             
                 </li>
             <li>
-                 <a href="index.html">About </a>
+                 <a href="about.html">About </a>
             </li>
             <li>
                  <a href="work.html">Work </a>
@@ -31,21 +168,87 @@
         </ul>
      </nav>
       </div>
-<br>
-    <div class="about-section container">
+ 
+ <div class="head">
+<h2>👋 Hello, I am</h2>
+  <h1>Aniya khawaja</h1>
+  <h3>Front-end developer based in Lebanon</h3>
+  <div class="contact mt-4 text-center">
+    <a href="contact.html" class="btn">Contact Me</a>
+  </div>
+  </div>
+  <br>
+  <p class=" ph text-center fs-5">Featured Projects - A selection of my best work showcasing my skills and expertise</p>
+  <br>
+  <div class="container">
     <div class="row">
-        <div class="col-lg-6">
-    <h1>Hi I am Aniya Khawaja</h1>
-    <h2 class="fw-bold mt-3">Frontend Developer, based in Lebanon</h2>
-    <p class="mt-3">For anyone who wants to start learning code, this workshop is very interesting. You will be challenged with different exercises, and everything is well explained, homework and deadlines are good for keep focus</p>
-    <a href="....." class="btn mt-3 p-3">See my projects</a>
+<div class="col-lg-6  d-none d-md-none d-lg-block">
+    <img src="imgs/yogurt.png" width="100%">
 </div>
-      <div class="col-lg-6">
-    <img src="imgs/croissant.jpg" width="100%" class="rounded-4">
+<div class="col-lg-6 mt-5 p-5">
+   <h2 class="yogurt-hd">Yogurt Project</h2>
+   <p class="text-muted mt-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by</p>
+   <br>
+   <a href="home.html" class="learn-btn">Learn More</a>
+</div>
     </div>
+  </div>
+  <br>
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-6 mt-5 p-5 ">
+   <h2 class="yogurt-hd">Weather Project</h2>
+   <p class="text-muted mt-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by</p>
+   <br>
+   <a href="home.html" class="learn-btn">Learn More</a>
+        </div>
+<div class="col-lg-6 d-none d-md-none d-lg-block">
+    <img src="imgs/weather.png" width="100%">
+</div>
+<br>
+ <div class="container">
+    <div class="row">
+<div class="col-lg-6 d-none d-md-none d-lg-block">
+    <img src="imgs/dictionary.png" width="100%">
+</div>
+<div class="col-lg-6 mt-5 p-5">
+   <h2 class="yogurt-hd">Dictionary Project</h2>
+   <p class="text-muted mt-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by</p>
+   <br>
+   <a href="home.html" class="learn-btn">Learn More</a>
+</div>
     </div>
+  </div>
+   </div>
+   <br>
+  <footer>
+        <div class="contact-box d-flex justify-content-between d-none d-md-flex">
+<div>
+    <h4 class="fs-1 fw-bold">Work Inquiry</h4> 
+    <p class="text-muted fs-5">Let's work together</p>
+</div>
+<div>
+    <a href="contact.html" class="contact-btn mt-3">Contact me</a>
+</div>
     </div>
+<a href="mailto:aniyakhawaja08@icloud.com" class="email mt-5">
+    aniyakhawaja08@icloud.com
+</a>
 
-   
+<div class="social-links d-flex justify-content-center">
+    <a href="https://github.com/Aniyakhawaja" target="_blank">
+<i class="fa-brands fa-github"></i>
+    </a>
+<a href="https://www.instagram.com" target="_blank" >
+   <i class="fa-brands fa-instagram" ></i>
+</a>
+<a href="https://x.com" target="_blank">
+  <i class="fa-brands fa-twitter" ></i>
+</a>
+</div>
+  </footer>
+  </div>
+  
 </body>
 </html>
+
